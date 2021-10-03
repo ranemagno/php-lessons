@@ -60,4 +60,11 @@
     echo $key . " - " . $property;
   };
 
+  // Broken
+  // for ($i = 0; $i = <10; $i++){
+  //   $number = 10 * $i;
+  //   echo "<br>The number is now - " . $number;
+  // };
+
+
 ?>
