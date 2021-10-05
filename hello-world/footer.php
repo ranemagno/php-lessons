@@ -1,4 +1,4 @@
-<div class="container-fluid fixed-bottom bg-dark text-white">
+<div class="container-fluid fixed-bottom bg-dark text-white mt-5">
   <div class="row">
     <div class="col justify-content-center">
       <div class="card-body">

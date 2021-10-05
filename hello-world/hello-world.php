@@ -7,13 +7,22 @@
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<title>PHP Basics</title>
+
+		<style media="screen">
+			.clear {
+				height: 50vh;
+			}
+		</style>
+
 	</head>
 	<body>
     <?php include 'navbar.php'; ?>
     <div class="container">
       <?php include 'first-exercise.php'; ?>
       <?php include 'arrays.php'; ?>
-      <?php include 'footer.php'; ?>
+			<?php include 'posts.php'; ?>
+			<div class="clear"></div>
+			<?php include 'footer.php'; ?>
     </div>
 
 	</body>
