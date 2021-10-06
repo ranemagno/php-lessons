@@ -29,12 +29,12 @@ $db = mysqli_connect($hostName, $userName, $userPass, $database) or die(mysqli_e
 // print_r($db);
 
 // Create/Setup Initial Table
-$new_table_query = "CREATE TABLE people(
-                    id INT AUTO_INCREMENT,
-                    Name VARCHAR(50) NOT NULL,
-                    Salary INT NOT NULL,
-                    PRIMARY KEY (id)
-                  )";
+// $new_table_query = "CREATE TABLE people(
+//                     id INT AUTO_INCREMENT,
+//                     Name VARCHAR(50) NOT NULL,
+//                     Salary INT NOT NULL,
+//                     PRIMARY KEY (id)
+//                   )";
 // if(mysqli_query($db,$new_table_query)){
 //   echo "Table Created Succesfully";
 // } else {
@@ -42,18 +42,32 @@ $new_table_query = "CREATE TABLE people(
 // };
 
 // Creating/Inserting new table info
-$new_person_query = "INSERT INTO people(name, salary)
-               VALUES('Rane','10'),
-               ('Angela', '22'),
-               ('Raphael', '22'),
-               ('Malka', '50')
-              ";
+// $new_person_query = "INSERT INTO people(name, salary)
+//                VALUES('Rane','10'),
+//                ('Angela', '22'),
+//                ('Raphael', '22'),
+//                ('Malka', '50')
+//               ";
+//
+//               if (mysqli_query($db,$new_person_query)) {
+//                 echo "Person Added" . $new_person_query;
+//               } else {
+//                 echo "Error Adding Person : " . mysqli_error($db);
+//               }
 
-              if (mysqli_query($db,$new_person_query)) {
-                echo "Person Added" . $new_person_query;
-              } else {
-                echo "Error Adding Person : " . mysqli_error($db);
-              }
+// Showing Data
+// $show_all_people = "SELECT name, salary FROM people";
+//
+// $result = $db -> query($show_all_people);
+// if ($result -> num_rows > 0){
+//   while($row = $result -> fetch_assoc()){
+//     echo '<div>' . $row['name'] . ' : $' . $row['salary'] . '</div>';
+//   }
+// } else {
+//   echo "0 results";
+// }
+
+
 ?>
 
 <!-- Resources and Notes
